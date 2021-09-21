@@ -16,8 +16,8 @@ const Greeting = () => {
   return (
     <React.Fragment>
       <h2>Hello Client!</h2>
-      {!changedText && <p>Nice to see you</p>}
-      {changedText && <p>Changed!</p>}
+      <Output>{!changedText && <p>Nice to see you</p>}</Output>
+      <Output>{changedText && <p>Changed!</p>}</Output>
       <button onClick={textChangeHandler}>Change Text</button>
     </React.Fragment>
   );
